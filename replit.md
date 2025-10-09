@@ -4,6 +4,17 @@
 
 NaijaConnect is a dating and connection platform built with Next.js that allows users to browse and unlock verified profiles in Nigeria. The platform uses a coin-based system where users purchase coins to unlock contact information (WhatsApp numbers) of profiles they're interested in. The application features user authentication, a payment integration system, and an admin dashboard for profile management.
 
+## Recent Changes
+
+**January 9, 2025 - Design Modernization & Profile Expansion**
+- Modernized UI with gradient hero section and smooth animations
+- Added 9 new diverse profiles (total: 15 profiles) representing different Nigerian cities and professions
+- Updated ProfileCard component with hover effects, image zoom, and modern card styling
+- Enhanced Navbar with gradient text logo, backdrop blur, and sticky positioning
+- Added custom animations (fade-in, slide-up) for better user experience
+- Improved button styles with gradient backgrounds and shadow effects
+- Updated global styling with modern gradients and responsive design
+
 ## User Preferences
 
 Preferred communication style: Simple, everyday language.
@@ -18,10 +29,11 @@ Preferred communication style: Simple, everyday language.
 - Tailwind CSS for styling with custom color scheme (orange #FF8C00, gold #D4AF37, brown #8B4513)
 
 **Component Structure**:
-- Layout components (Navbar, Footer) provide consistent navigation and branding
-- ProfileCard components display user profiles with locked/unlocked states
+- Layout components (Navbar with gradient logo and backdrop blur, Footer) provide consistent navigation and branding
+- Modern ProfileCard components with hover effects, image zoom, and smooth animations
 - PaymentModal handles the coin purchase flow
 - Admin dashboard components for profile and user management
+- Hero section with gradient background and animated statistics
 
 **State Management**:
 - React hooks (useState, useEffect) for local component state
@@ -130,6 +142,7 @@ Required environment variables:
 - `PAYSTACK_SECRET_KEY`: Paystack API key for payment processing
 
 ### Deployment
-- Configured for Vercel deployment
+- Configured for Replit deployment with autoscale
 - Custom port configuration (5000) for development and production
 - Host binding to 0.0.0.0 for container compatibility
+- Build and start scripts optimized for Replit environment
