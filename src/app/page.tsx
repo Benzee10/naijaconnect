@@ -165,22 +165,39 @@ export default function Home() {
   };
 
   return (
-    <div className="container mx-auto px-4 py-8">
-      <section className="mb-10">
-        <div className="text-center mb-8">
-          <h1 className="text-4xl font-bold text-[#FF8C00] mb-2">Find Your Connection</h1>
-          <p className="text-xl text-[#8B4513]">Browse verified profiles and connect with amazing people</p>
+    <div className="min-h-screen">
+      <section className="hero-gradient py-20 px-4">
+        <div className="container mx-auto text-center">
+          <h1 className="text-5xl md:text-6xl font-bold text-white mb-4 animate-fade-in">
+            Find Your Perfect Match
+          </h1>
+          <p className="text-xl md:text-2xl text-white/90 mb-8 animate-fade-in-delay">
+            Connect with verified singles across Nigeria
+          </p>
+          <div className="flex gap-4 justify-center animate-fade-in-delay-2">
+            <div className="bg-white/20 backdrop-blur-sm rounded-full px-6 py-3 text-white">
+              <span className="font-bold">15+</span> Active Profiles
+            </div>
+            <div className="bg-white/20 backdrop-blur-sm rounded-full px-6 py-3 text-white">
+              <span className="font-bold">100%</span> Verified
+            </div>
+          </div>
         </div>
       </section>
 
-      <section>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {mockProfiles.map(profile => (
-            <ProfileCard 
-              key={profile.id} 
-              profile={profile} 
-              onUnlock={handleUnlock}
-            />
+      <section className="container mx-auto px-4 py-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {mockProfiles.map((profile, index) => (
+            <div 
+              key={profile.id}
+              className="animate-slide-up"
+              style={{ animationDelay: `${index * 0.1}s` }}
+            >
+              <ProfileCard 
+                profile={profile} 
+                onUnlock={handleUnlock}
+              />
+            </div>
           ))}
         </div>
       </section>
