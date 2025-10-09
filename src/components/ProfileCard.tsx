@@ -13,11 +13,12 @@ interface ProfileCardProps {
 const ProfileCard = ({ profile, isUnlocked = false, onUnlock }: ProfileCardProps) => {
   return (
     <div className="modern-card group">
-      <div className="relative h-72 w-full overflow-hidden">
+      <div className="relative w-full overflow-hidden" style={{ height: '288px' }}>
         <Image 
           src={profile.profilePicture || '/profiles/placeholder-profile.jpg'} 
           alt={`${profile.name}'s profile picture`}
           fill
+          sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, (max-width: 1280px) 33vw, 25vw"
           className="object-cover transition-transform duration-500 group-hover:scale-110"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
