@@ -27,23 +27,23 @@ const ProfileCard = ({ profile, isUnlocked = false, onUnlock }: ProfileCardProps
       </div>
       
       <div className="p-6">
-        <h3 className="text-2xl font-bold mb-2 text-gray-800">
+        <h3 className="text-2xl font-bold mb-2 text-white">
           {profile.name}, {profile.age}
         </h3>
         
-        <p className="text-gray-600 mb-6 line-clamp-2 leading-relaxed">
+        <p className="text-gray-400 mb-6 line-clamp-2 leading-relaxed">
           {profile.bio}
         </p>
         
-        <div className="border-t border-gray-100 pt-4">
+        <div className="border-t border-[#2a2a2a] pt-4">
           {isUnlocked ? (
-            <div className="flex items-center justify-between bg-green-50 rounded-lg p-3">
+            <div className="flex items-center justify-between bg-green-500/10 border border-green-500/20 rounded-lg p-3">
               <div className="flex items-center">
                 <FaWhatsapp className="text-green-500 mr-2 text-xl" />
-                <span className="font-medium">{profile.whatsappNumber}</span>
+                <span className="font-medium text-white">{profile.whatsappNumber}</span>
               </div>
               <button 
-                className="text-[#D4AF37] hover:text-[#C09C2F] transition-colors"
+                className="text-[#D4AF37] hover:text-[#FF8C00] transition-colors"
                 onClick={() => navigator.clipboard.writeText(profile.whatsappNumber)}
               >
                 <FaCopy className="text-lg" />

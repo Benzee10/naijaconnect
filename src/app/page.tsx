@@ -165,33 +165,33 @@ export default function Home() {
   };
 
   return (
-    <div className="min-h-screen">
-      <section className="hero-gradient py-20 px-4">
-        <div className="container mx-auto text-center">
-          <h1 className="text-5xl md:text-6xl font-bold text-white mb-4 animate-fade-in">
+    <div className="min-h-screen bg-[#0a0a0a]">
+      <section className="hero-gradient py-20 px-4 relative z-10">
+        <div className="container mx-auto text-center relative z-10">
+          <h1 className="text-5xl md:text-6xl font-bold bg-gradient-to-r from-[#FF8C00] to-[#D4AF37] bg-clip-text text-transparent mb-4 animate-fade-in">
             Find Your Perfect Match
           </h1>
-          <p className="text-xl md:text-2xl text-white/90 mb-8 animate-fade-in-delay">
+          <p className="text-xl md:text-2xl text-gray-300 mb-8 animate-fade-in-delay">
             Connect with verified singles across Nigeria
           </p>
-          <div className="flex gap-4 justify-center animate-fade-in-delay-2">
-            <div className="bg-white/20 backdrop-blur-sm rounded-full px-6 py-3 text-white">
-              <span className="font-bold">15+</span> Active Profiles
+          <div className="flex flex-wrap gap-4 justify-center animate-fade-in-delay-2">
+            <div className="bg-[#FF8C00]/10 border border-[#FF8C00]/20 backdrop-blur-sm rounded-full px-6 py-3 text-gray-200">
+              <span className="font-bold text-[#FF8C00]">15+</span> Active Profiles
             </div>
-            <div className="bg-white/20 backdrop-blur-sm rounded-full px-6 py-3 text-white">
-              <span className="font-bold">100%</span> Verified
+            <div className="bg-[#D4AF37]/10 border border-[#D4AF37]/20 backdrop-blur-sm rounded-full px-6 py-3 text-gray-200">
+              <span className="font-bold text-[#D4AF37]">100%</span> Verified
             </div>
           </div>
         </div>
       </section>
 
-      <section className="container mx-auto px-4 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <section className="container mx-auto px-4 py-16">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
           {mockProfiles.map((profile, index) => (
             <div 
               key={profile.id}
               className="animate-slide-up"
-              style={{ animationDelay: `${index * 0.1}s` }}
+              style={{ animationDelay: `${index * 0.05}s` }}
             >
               <ProfileCard 
                 profile={profile} 

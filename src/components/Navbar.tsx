@@ -6,7 +6,7 @@ const Navbar = () => {
   const isLoggedIn = false;
 
   return (
-    <nav className="bg-white/80 backdrop-blur-md shadow-sm sticky top-0 z-50 border-b border-gray-100">
+    <nav className="bg-black/50 backdrop-blur-md shadow-lg sticky top-0 z-50 border-b border-[#2a2a2a]">
       <div className="container mx-auto px-4 py-4 flex justify-between items-center">
         <Link href="/" className="text-3xl font-bold bg-gradient-to-r from-[#FF8C00] to-[#D4AF37] bg-clip-text text-transparent hover:scale-105 transition-transform">
           NaijaConnect
@@ -15,7 +15,7 @@ const Navbar = () => {
         <div className="flex items-center gap-6">
           {isLoggedIn ? (
             <>
-              <Link href="/wallet" className="flex items-center gap-2 text-[#D4AF37] hover:text-[#C09C2F] transition-colors font-medium">
+              <Link href="/wallet" className="flex items-center gap-2 text-[#D4AF37] hover:text-[#FF8C00] transition-colors font-medium">
                 <FaCoins className="text-lg" />
                 <span>Wallet</span>
               </Link>
@@ -26,7 +26,7 @@ const Navbar = () => {
             </>
           ) : (
             <>
-              <Link href="/login" className="text-[#8B4513] hover:text-[#FF8C00] transition-colors font-medium px-4 py-2 rounded-lg hover:bg-gray-50">
+              <Link href="/login" className="text-gray-300 hover:text-[#FF8C00] transition-colors font-medium px-4 py-2 rounded-lg hover:bg-white/5">
                 Login
               </Link>
               <Link href="/register" className="btn-primary">
