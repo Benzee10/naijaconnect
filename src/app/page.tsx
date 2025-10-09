@@ -72,7 +72,7 @@ const mockProfiles: Profile[] = [
     location: 'Lagos',
     bio: 'Marketing professional with a passion for storytelling. I love yoga, hiking, and exploring Lagos\' vibrant food scene.',
     whatsappNumber: '+2348078901234',
-    profilePicture: '/profiles/placeholder-profile.jpg',
+    profilePicture: '/profiles/blessing.jpg',
     coinCost: 5
   },
   {
@@ -82,7 +82,7 @@ const mockProfiles: Profile[] = [
     location: 'Kaduna',
     bio: 'Architect and photographer. I enjoy capturing beautiful moments and designing spaces that inspire. Let\'s create memories together!',
     whatsappNumber: '+2348089012345',
-    profilePicture: '/profiles/placeholder-profile.jpg',
+    profilePicture: '/profiles/ibrahim.jpg',
     coinCost: 5
   },
   {
@@ -92,7 +92,7 @@ const mockProfiles: Profile[] = [
     location: 'Owerri',
     bio: 'Makeup artist and beauty enthusiast. I love making people feel confident and beautiful. Looking for someone genuine and caring.',
     whatsappNumber: '+2348090123456',
-    profilePicture: '/profiles/placeholder-profile.jpg',
+    profilePicture: '/profiles/chioma.jpg',
     coinCost: 5
   },
   {
@@ -102,7 +102,7 @@ const mockProfiles: Profile[] = [
     location: 'Lagos',
     bio: 'Financial analyst and investment advisor. I enjoy chess, golf, and intellectual conversations. Seeking a smart and ambitious partner.',
     whatsappNumber: '+2348101234567',
-    profilePicture: '/profiles/placeholder-profile.jpg',
+    profilePicture: '/profiles/tunde.jpg',
     coinCost: 5
   },
   {
@@ -112,7 +112,7 @@ const mockProfiles: Profile[] = [
     location: 'Abuja',
     bio: 'Content creator and digital marketer. I love traveling, photography, and trying new cuisines. Let\'s explore the world together!',
     whatsappNumber: '+2348112345678',
-    profilePicture: '/profiles/placeholder-profile.jpg',
+    profilePicture: '/profiles/aisha.jpg',
     coinCost: 5
   },
   {
@@ -122,7 +122,7 @@ const mockProfiles: Profile[] = [
     location: 'Onitsha',
     bio: 'Entrepreneur and car enthusiast. I love racing, business strategy, and building successful ventures. Looking for my ride-or-die partner.',
     whatsappNumber: '+2348123456789',
-    profilePicture: '/profiles/placeholder-profile.jpg',
+    profilePicture: '/profiles/ifeanyi.jpg',
     coinCost: 5
   },
   {
@@ -132,7 +132,7 @@ const mockProfiles: Profile[] = [
     location: 'Jos',
     bio: 'Pharmacist with a heart for community service. I enjoy baking, volunteering, and peaceful evenings. Seeking someone kind and respectful.',
     whatsappNumber: '+2348134567890',
-    profilePicture: '/profiles/placeholder-profile.jpg',
+    profilePicture: '/profiles/zainab.jpg',
     coinCost: 5
   },
   {
@@ -142,7 +142,7 @@ const mockProfiles: Profile[] = [
     location: 'Lagos',
     bio: 'Lawyer and human rights advocate. I\'m passionate about justice, literature, and fine dining. Looking for an intelligent conversationalist.',
     whatsappNumber: '+2348145678901',
-    profilePicture: '/profiles/placeholder-profile.jpg',
+    profilePicture: '/profiles/adeola.jpg',
     coinCost: 5
   },
   {
@@ -152,7 +152,7 @@ const mockProfiles: Profile[] = [
     location: 'Calabar',
     bio: 'Event planner who loves bringing joy to celebrations. I enjoy dancing, beach walks, and romantic gestures. Let\'s make magic together!',
     whatsappNumber: '+2348156789012',
-    profilePicture: '/profiles/placeholder-profile.jpg',
+    profilePicture: '/profiles/kemi.jpg',
     coinCost: 5
   }
 ];
