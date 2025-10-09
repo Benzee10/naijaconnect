@@ -166,31 +166,31 @@ export default function Home() {
 
   return (
     <div className="min-h-screen bg-[#0a0a0a]">
-      <section className="hero-gradient py-20 px-4 relative z-10">
-        <div className="container mx-auto text-center relative z-10">
-          <h1 className="text-5xl md:text-6xl font-bold bg-gradient-to-r from-[#FF8C00] to-[#D4AF37] bg-clip-text text-transparent mb-4 animate-fade-in">
+      <section className="hero-gradient py-12 md:py-20 px-4 relative z-10">
+        <div className="container mx-auto text-center relative z-10 max-w-6xl">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold bg-gradient-to-r from-[#FF8C00] to-[#D4AF37] bg-clip-text text-transparent mb-3 md:mb-4 animate-fade-in px-2">
             Find Your Perfect Match
           </h1>
-          <p className="text-xl md:text-2xl text-gray-300 mb-8 animate-fade-in-delay">
+          <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-300 mb-6 md:mb-8 animate-fade-in-delay px-4">
             Connect with verified singles across Nigeria
           </p>
-          <div className="flex flex-wrap gap-4 justify-center animate-fade-in-delay-2">
-            <div className="bg-[#FF8C00]/10 border border-[#FF8C00]/20 backdrop-blur-sm rounded-full px-6 py-3 text-gray-200">
+          <div className="flex flex-wrap gap-3 md:gap-4 justify-center animate-fade-in-delay-2 px-4">
+            <div className="bg-[#FF8C00]/10 border border-[#FF8C00]/20 backdrop-blur-sm rounded-full px-4 md:px-6 py-2 md:py-3 text-gray-200 text-sm md:text-base">
               <span className="font-bold text-[#FF8C00]">15+</span> Active Profiles
             </div>
-            <div className="bg-[#D4AF37]/10 border border-[#D4AF37]/20 backdrop-blur-sm rounded-full px-6 py-3 text-gray-200">
+            <div className="bg-[#D4AF37]/10 border border-[#D4AF37]/20 backdrop-blur-sm rounded-full px-4 md:px-6 py-2 md:py-3 text-gray-200 text-sm md:text-base">
               <span className="font-bold text-[#D4AF37]">100%</span> Verified
             </div>
           </div>
         </div>
       </section>
 
-      <section className="container mx-auto px-4 py-16">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+      <section className="container mx-auto px-3 sm:px-4 md:px-6 lg:px-8 py-8 md:py-12 lg:py-16">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-5 md:gap-6">
           {mockProfiles.map((profile, index) => (
             <div 
               key={profile.id}
-              className="animate-slide-up"
+              className="animate-slide-up w-full"
               style={{ animationDelay: `${index * 0.05}s` }}
             >
               <ProfileCard 
