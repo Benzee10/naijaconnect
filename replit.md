@@ -6,14 +6,15 @@ NaijaConnect is a dating and connection platform built with Next.js that allows 
 
 ## Recent Changes
 
-**January 9, 2025 - Design Modernization & Profile Expansion**
-- Modernized UI with gradient hero section and smooth animations
-- Added 9 new diverse profiles (total: 15 profiles) representing different Nigerian cities and professions
-- Updated ProfileCard component with hover effects, image zoom, and modern card styling
-- Enhanced Navbar with gradient text logo, backdrop blur, and sticky positioning
-- Added custom animations (fade-in, slide-up) for better user experience
-- Improved button styles with gradient backgrounds and shadow effects
-- Updated global styling with modern gradients and responsive design
+**January 9, 2025 - Dark Theme Implementation & Profile Pictures**
+- Converted entire website to modern dark theme with black backgrounds (#0a0a0a)
+- Added professional profile pictures for all 15 users using stock images
+- Implemented responsive grid layout (4 columns XL, 3 columns LG, 2 columns SM, 1 column mobile)
+- Dark themed components: Navbar with backdrop blur, Hero with radial gradients, ProfileCards with dark backgrounds
+- Enhanced color scheme with orange (#FF8C00) and gold (#D4AF37) accents on dark backgrounds
+- Updated all text colors for optimal contrast and readability on dark theme
+- Improved card hover effects with orange glow shadows
+- Added border accents and subtle gradient overlays for visual depth
 
 ## User Preferences
 
