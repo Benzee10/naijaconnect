@@ -64,6 +64,96 @@ const mockProfiles: Profile[] = [
     whatsappNumber: '+2348067890123',
     profilePicture: '/profiles/oluwaseun.jpg',
     coinCost: 5
+  },
+  {
+    id: '7',
+    name: 'Blessing',
+    age: 27,
+    location: 'Lagos',
+    bio: 'Marketing professional with a passion for storytelling. I love yoga, hiking, and exploring Lagos\' vibrant food scene.',
+    whatsappNumber: '+2348078901234',
+    profilePicture: '/profiles/placeholder-profile.jpg',
+    coinCost: 5
+  },
+  {
+    id: '8',
+    name: 'Ibrahim',
+    age: 31,
+    location: 'Kaduna',
+    bio: 'Architect and photographer. I enjoy capturing beautiful moments and designing spaces that inspire. Let\'s create memories together!',
+    whatsappNumber: '+2348089012345',
+    profilePicture: '/profiles/placeholder-profile.jpg',
+    coinCost: 5
+  },
+  {
+    id: '9',
+    name: 'Chioma',
+    age: 24,
+    location: 'Owerri',
+    bio: 'Makeup artist and beauty enthusiast. I love making people feel confident and beautiful. Looking for someone genuine and caring.',
+    whatsappNumber: '+2348090123456',
+    profilePicture: '/profiles/placeholder-profile.jpg',
+    coinCost: 5
+  },
+  {
+    id: '10',
+    name: 'Tunde',
+    age: 35,
+    location: 'Lagos',
+    bio: 'Financial analyst and investment advisor. I enjoy chess, golf, and intellectual conversations. Seeking a smart and ambitious partner.',
+    whatsappNumber: '+2348101234567',
+    profilePicture: '/profiles/placeholder-profile.jpg',
+    coinCost: 5
+  },
+  {
+    id: '11',
+    name: 'Aisha',
+    age: 23,
+    location: 'Abuja',
+    bio: 'Content creator and digital marketer. I love traveling, photography, and trying new cuisines. Let\'s explore the world together!',
+    whatsappNumber: '+2348112345678',
+    profilePicture: '/profiles/placeholder-profile.jpg',
+    coinCost: 5
+  },
+  {
+    id: '12',
+    name: 'Ifeanyi',
+    age: 28,
+    location: 'Onitsha',
+    bio: 'Entrepreneur and car enthusiast. I love racing, business strategy, and building successful ventures. Looking for my ride-or-die partner.',
+    whatsappNumber: '+2348123456789',
+    profilePicture: '/profiles/placeholder-profile.jpg',
+    coinCost: 5
+  },
+  {
+    id: '13',
+    name: 'Zainab',
+    age: 26,
+    location: 'Jos',
+    bio: 'Pharmacist with a heart for community service. I enjoy baking, volunteering, and peaceful evenings. Seeking someone kind and respectful.',
+    whatsappNumber: '+2348134567890',
+    profilePicture: '/profiles/placeholder-profile.jpg',
+    coinCost: 5
+  },
+  {
+    id: '14',
+    name: 'Adeola',
+    age: 33,
+    location: 'Lagos',
+    bio: 'Lawyer and human rights advocate. I\'m passionate about justice, literature, and fine dining. Looking for an intelligent conversationalist.',
+    whatsappNumber: '+2348145678901',
+    profilePicture: '/profiles/placeholder-profile.jpg',
+    coinCost: 5
+  },
+  {
+    id: '15',
+    name: 'Kemi',
+    age: 29,
+    location: 'Calabar',
+    bio: 'Event planner who loves bringing joy to celebrations. I enjoy dancing, beach walks, and romantic gestures. Let\'s make magic together!',
+    whatsappNumber: '+2348156789012',
+    profilePicture: '/profiles/placeholder-profile.jpg',
+    coinCost: 5
   }
 ];
 
