@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: #FF8C00;
+  --secondary: #D4AF37;
+  --accent: #8B4513;
+  --background: #FFFAF0;
+  --foreground: #333333;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+}
+
+@layer components {
+  .btn-primary {
+    background-color: #FF8C00;
+    color: white;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border-radius: 9999px;
+    transition: all 0.2s;
+  }
+  .btn-primary:hover {
+    background-color: #E67300;
+  }
+  
+  .btn-secondary {
+    background-color: #D4AF37;
+    color: white;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border-radius: 9999px;
+    transition: all 0.2s;
+  }
+  .btn-secondary:hover {
+    background-color: #C09C2F;
+  }
+  
+  .card {
+    background-color: white;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+  
+  .avatar {
+    border-radius: 9999px;
+    object-fit: cover;
+  }
+  
+  .locked-content {
+    filter: blur(4px);
+    position: relative;
+  }
+}
