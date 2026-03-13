@@ -1,68 +1,45 @@
-'use client';
+import Image from "next/image";
+import Link from "next/link";
+import { Profile } from "@/data/profiles";
 
-import Image from 'next/image';
-import { FaLock, FaWhatsapp, FaCopy } from 'react-icons/fa';
-import { Profile } from '@/types';
-
-interface ProfileCardProps {
-  profile: Profile;
-  isUnlocked?: boolean;
-  onUnlock?: (profileId: string) => void;
-}
-
-const ProfileCard = ({ profile, isUnlocked = false, onUnlock }: ProfileCardProps) => {
+export default function ProfileCard({ profile }: { profile: Profile }) {
   return (
-    <div className="modern-card group">
-      <div className="relative w-full overflow-hidden" style={{ height: '288px' }}>
-        <Image 
-          src={profile.profilePicture || '/profiles/placeholder-profile.jpg'} 
-          alt={`${profile.name}'s profile picture`}
+    <div className="bg-white dark:bg-gray-900 rounded-2xl overflow-hidden shadow-sm border border-gray-100 dark:border-gray-800 hover:shadow-lg hover:-translate-y-1 transition-all duration-200 group">
+      <div className="relative aspect-[4/5] w-full overflow-hidden bg-gray-100 dark:bg-gray-800">
+        <Image
+          src={profile.photo}
+          alt={profile.name}
           fill
-          sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, (max-width: 1280px) 33vw, 25vw"
-          className="object-cover transition-transform duration-500 group-hover:scale-110"
+          className="object-cover group-hover:scale-105 transition-transform duration-300"
+          sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
-        <span className="absolute top-4 right-4 bg-white/90 backdrop-blur-sm text-[#FF8C00] px-3 py-1 rounded-full text-sm font-semibold shadow-lg">
-          {profile.location}
-        </span>
+        {profile.verified && (
+          <span className="absolute top-2 right-2 bg-pink-500 text-white text-xs font-semibold px-2 py-0.5 rounded-full flex items-center gap-1">
+            <svg xmlns="http://www.w3.org/2000/svg" className="w-3 h-3" viewBox="0 0 20 20" fill="currentColor">
+              <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+            </svg>
+            Verified
+          </span>
+        )}
       </div>
-      
-      <div className="p-4 sm:p-5 md:p-6">
-        <h3 className="text-xl sm:text-2xl font-bold mb-2 text-white">
-          {profile.name}, {profile.age}
-        </h3>
-        
-        <p className="text-sm sm:text-base text-gray-400 mb-4 sm:mb-6 line-clamp-2 leading-relaxed">
-          {profile.bio}
-        </p>
-        
-        <div className="border-t border-[#2a2a2a] pt-3 sm:pt-4">
-          {isUnlocked ? (
-            <div className="flex items-center justify-between bg-green-500/10 border border-green-500/20 rounded-lg p-2 sm:p-3">
-              <div className="flex items-center">
-                <FaWhatsapp className="text-green-500 mr-2 text-lg sm:text-xl" />
-                <span className="font-medium text-white text-sm sm:text-base">{profile.whatsappNumber}</span>
-              </div>
-              <button 
-                className="text-[#D4AF37] hover:text-[#FF8C00] transition-colors"
-                onClick={() => navigator.clipboard.writeText(profile.whatsappNumber)}
-              >
-                <FaCopy className="text-base sm:text-lg" />
-              </button>
-            </div>
-          ) : (
-            <button 
-              className="btn-primary w-full flex items-center justify-center gap-2 py-2.5 sm:py-3 text-base sm:text-lg shadow-lg hover:shadow-xl transition-all"
-              onClick={() => onUnlock && onUnlock(profile.id)}
-            >
-              <FaLock className="text-sm sm:text-base" />
-              <span>Unlock WhatsApp ({profile.coinCost} coins)</span>
-            </button>
-          )}
+      <div className="p-3">
+        <div className="flex items-center justify-between mb-1">
+          <h3 className="font-semibold text-gray-900 dark:text-white text-base">{profile.name}, {profile.age}</h3>
         </div>
+        <p className="text-xs text-gray-500 dark:text-gray-400 flex items-center gap-1 mb-2">
+          <svg xmlns="http://www.w3.org/2000/svg" className="w-3 h-3 flex-shrink-0" viewBox="0 0 20 20" fill="currentColor">
+            <path fillRule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clipRule="evenodd" />
+          </svg>
+          {profile.location}
+        </p>
+        <p className="text-xs text-gray-600 dark:text-gray-400 line-clamp-2 mb-3">{profile.bio}</p>
+        <Link
+          href={`/profiles/${profile.id}`}
+          className="block w-full text-center text-sm font-semibold bg-pink-500 hover:bg-pink-600 text-white py-2 rounded-xl transition-colors"
+        >
+          View Profile
+        </Link>
       </div>
     </div>
   );
-};
-
-export default ProfileCard;
+}
