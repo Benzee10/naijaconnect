@@ -41,3 +41,8 @@ externalPort = 3000
 deploymentTarget = "autoscale"
 run = ["npm", "run", "start"]
 build = ["npm", "run", "build"]
+
+[userenv]
+
+[userenv.shared]
+NEXTAUTH_URL = "https://bc95365c-45f3-4133-bf95-27a4650fd95b-00-2kurfrmtbyox3.worf.replit.dev"
